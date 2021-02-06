@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 :root {
   --title-color: #212121;
   --text-color: #757575;
@@ -14,7 +18,9 @@
 
 body {
   background: #FFFFFF;
-  width: 1600px;
+  margin: 0;
+
+  /* width: 1600px; */
 }
 
 /* a {
@@ -44,4 +50,12 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-  
+
+/* Контенер */
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
