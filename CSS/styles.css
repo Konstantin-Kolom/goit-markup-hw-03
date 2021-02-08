@@ -1,6 +1,9 @@
 .body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  background-color: #FFFFFF
+
+  /* width: 1600px;  */
 }
 
 /* Стили логотипа */
@@ -37,7 +40,7 @@
 } 
 
 .contacts-link {
-  color: #757575;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -45,13 +48,14 @@
   letter-spacing: 0.02em;
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--active-color);
 }
 
 /* Стили Герой */
 .hero {
-  background: var(--bg-hero);
+  background-color: var(--bg-hero);
 }
 
 .title-hero {
@@ -68,7 +72,7 @@
   text-align: center;
   display: inline-block;
   color: var(--text-active-color);
-  background: var(--active-color);
+  background-color: var(--active-color);
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
@@ -83,6 +87,7 @@
 
 .title-description {
   text-transform: uppercase;
+  color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -97,6 +102,7 @@
 
 /* Стили Чем занимаемся*/
 .title-work {
+  color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -105,10 +111,11 @@
 
 /* Стили Наша команда*/
 .staff {
-  background: #F5F4FA;
+  background-color: #F5F4FA;
 }
 
 .title-staff {
+  color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -116,6 +123,7 @@
 }
 
 .employee-title {
+  color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -135,7 +143,7 @@
 
 /* Стили Подвал*/
 .footer {
-  background: var(--bg-footer);
+  background-color: var(--bg-footer);
 }
 
 .logo-footer{
@@ -150,7 +158,7 @@
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.6);;
+  color: var(--link-color-footer);
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
@@ -161,8 +169,8 @@
 /*Стилизация Кнопки - Портфолио*/
 .bt {
   color: var(---button-color);
-  background: var(--bg-button);
-  font-family: Roboto, sans-serif;
+  background-color: var(--bg-button);
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -174,7 +182,7 @@
 
 .bt.autofocus{
   color: var(--button-color-active);
-  background: var(--bg-button-active);
+  background-color: var(--bg-button-active);
   
 }
 
@@ -191,6 +199,7 @@
 }
 
 .program-type {
+  color: var(--text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

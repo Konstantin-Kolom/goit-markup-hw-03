@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 :root {
   --title-color: #212121;
   --text-color: #757575;
@@ -7,20 +11,19 @@
   --bg-hero: #2F303A;
   --bg-footer: #2F303A;
 
-  --link-color: #757575;
-  --link-color-footer: rgba(255, 255, 255, 0.6);
-
   --bg-button: #F5F4FA;
-  --button-color: #212121;
   --bg-button-active: #2196F3;
-  --button-color-active: #FFFFFF;
 
+  --button-color: #212121;
+  --button-color-active: #FFFFFF;
 }
 
-/* body {
-  background-color: #FFFFFF;
-  width: 1600px;
-} */
+body {
+  background: #FFFFFF;
+  margin: 0;
+
+  /* width: 1600px; */
+}
 
 /* a {
   text-decoration: none;
@@ -28,13 +31,14 @@
 
 li {
   list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+
 }
   
 ul {
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -49,4 +53,12 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-  
+
+/* Контенер */
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
