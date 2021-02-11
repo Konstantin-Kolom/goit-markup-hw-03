@@ -2,9 +2,14 @@
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   background-color: #FFFFFF
-
-  /* width: 1600px;  */
 }
+
+/* Стилизация хедера*/
+.container .nav {
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* Стили логотипа */
 .logo {
@@ -12,7 +17,7 @@
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -56,6 +61,11 @@
 /* Стили Герой */
 .hero {
   background-color: var(--bg-hero);
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .title-hero {
@@ -63,9 +73,9 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
 }
 
 .order-button {
@@ -80,10 +90,24 @@
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
-  
-}
+  margin-top: 30px;
+}   
+
 
 /* Стили Наши достоинства*/
+.ul-description {
+  margin-top: 94px;
+  display: flex;
+  flex-direction: row;
+}
+
+.li-description {
+  padding-right: 30px;
+}
+
+.li-description:last-child {
+  padding-right: 0;
+}
 
 .title-description {
   text-transform: uppercase;
@@ -107,7 +131,22 @@
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+  margin-top: 94px;
 }
+
+.ul-work {
+  margin-top: 50px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ing-work {
+  display: block;
+  margin-right: 30px;
+}
+
 
 /* Стили Наша команда*/
 .staff {
@@ -120,6 +159,18 @@
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
+  padding-top: 94px;
+}
+
+.ul-staff {
+  margin-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-direction: row;
+}
+
+.li-staff {
+  margin-right: 30px;
 }
 
 .employee-title {
@@ -130,6 +181,7 @@
   text-align: center;
   width: 270px;
   height: 19px;
+  margin-top: 30px;
 }
 
 .employee-position {
@@ -139,11 +191,13 @@
   line-height: 1.19;
   text-align: center;
   width: 270px;
+  margin-top: 10px;
 }
 
 /* Стили Подвал*/
 .footer {
   background-color: var(--bg-footer);
+  padding-top: 60px;
 }
 
 .logo-footer{
@@ -155,19 +209,26 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.19;
+  margin-top: 20px;
+}
+
+.address-ul {
+  margin-top: ;
 }
 
 .footer-link {
+  display: block;
   color: var(--link-color-footer);
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
+  margin-top: 9px;
 }
 
 
 /*Стилизация Кнопки - Портфолио*/
-.bt {
+.btn {
   color: var(---button-color);
   background-color: var(--bg-button);
   font-family: inherit;
@@ -178,15 +239,28 @@
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
-.bt.autofocus{
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--text-active-color);
+  background-color: var(--active-color);
+}
+
+.btn.autofocus{
   color: var(--button-color-active);
   background-color: var(--bg-button-active);
   
 }
 
 /*Стилизация Разработки - Портфолио*/
+
 .program-title {
   color: var(--title-color);
   font-style: normal;
@@ -195,7 +269,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: center;
-  width: 370px;
+  margin-top: 20px;
 }
 
 .program-type {
@@ -205,5 +279,18 @@
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
-  width: 370px;
+  margin-top: 4px;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-marg-size));
+  margin-left: calc(-1 * var(--card-marg-size));
+}
+
+.program-item {
+  flex-basis: calc(100% / 3 - var(--card-marg-size));
+  margin-top: var(--card-marg-size);
+  margin-left: var(--card-marg-size);
 }
