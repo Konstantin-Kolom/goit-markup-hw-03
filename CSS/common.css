@@ -15,8 +15,10 @@
   --bg-button-active: #2196F3;
   --button-color-active: #FFFFFF;
 
+  --description-marg-size: 30px;
   --card-marg-size: 30px;
 
+  --box-shadow-staff: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -58,6 +60,11 @@ p {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

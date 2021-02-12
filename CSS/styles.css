@@ -4,12 +4,10 @@
   background-color: #FFFFFF
 }
 
-/* Стилизация хедера*/
-.container .nav {
-  display: flex;
-  flex-direction: row;
+/* HEADER */
+.header {
+  border: 1px solid #ECECEC
 }
-
 
 /* Стили логотипа */
 .logo {
@@ -19,13 +17,14 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+  padding-right: 93px;
 }
 
 .logo .logo-text {
   color: var(--title-color);
 }
 
-/* Стили навигации */
+/* Стили НАВИГАЦИЯ */
 .nav-link {
   color: var(--title-color);
   text-decoration: none;
@@ -33,6 +32,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
 }
 
 .nav-link:hover,
@@ -58,14 +58,63 @@
   color: var(--active-color);
 }
 
+/* Геометрия и Сетка флекс */
+.header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  
+}
+
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu .nav-line {
+  margin-right: 50px;
+}
+
+.nav-menu .nav-line:last-child{
+  margin-right: 0px;
+}
+
+.contacts-line {
+  margin-left: 50px;
+}
+
+.contacts-line:first-child {
+  margin-left: 0px;
+}
+
+/* MAIN*/
 /* Стили Герой */
-.hero {
+.section-hero {
   background-color: var(--bg-hero);
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .title-hero {
@@ -75,7 +124,6 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
 }
 
 .order-button {
@@ -94,21 +142,7 @@
 }   
 
 
-/* Стили Наши достоинства*/
-.ul-description {
-  margin-top: 94px;
-  display: flex;
-  flex-direction: row;
-}
-
-.li-description {
-  padding-right: 30px;
-}
-
-.li-description:last-child {
-  padding-right: 0;
-}
-
+/* Стили НАШИ ДОСТОИНСТВА*/
 .title-description {
   text-transform: uppercase;
   color: var(--title-color);
@@ -124,31 +158,58 @@
   line-height: 1.71;
 }
 
-/* Стили Чем занимаемся*/
-.title-work {
+/* Геометрия и Флекс сетка */
+
+.description-box {
+  display: inline-block;
+  margin-top: 94px
+}
+
+.description-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--description-marg-size));
+  margin-left: calc(-1 * var(--description-marg-size));
+}
+
+.description-item {
+  flex-basis: calc(100% / 4 - var(--description-marg-size));
+  margin-left: var(--description-marg-size);
+  margin-top: var(--description-marg-size);
+}
+
+
+/* Стили ЧЕМ ЗАНИМАЕМСЯ*/
+.work-title {
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-  margin-top: 94px;
 }
 
-.ul-work {
-  margin-top: 50px;
-  padding-bottom: 94px;
+/* Геометрия и Флекс сетка */
+.work-list {
   display: flex;
   flex-direction: row;
-
+  margin-top: 50px;
 }
 
-.ing-work {
-  display: block;
-  margin-right: 30px;
+.work-line {
+  margin-right: 30px; 
+}
+
+.work-line:last-child {
+  margin-right: 0px; 
+}
+
+.work .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 
-/* Стили Наша команда*/
+/* Стили НАША КОМАНДА */
 .staff {
   background-color: #F5F4FA;
 }
@@ -159,18 +220,7 @@
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-  padding-top: 94px;
-}
-
-.ul-staff {
-  margin-top: 94px;
-  padding-bottom: 94px;
-  display: flex;
-  flex-direction: row;
-}
-
-.li-staff {
-  margin-right: 30px;
+  /* padding-bottom: 50px; */
 }
 
 .employee-title {
@@ -181,7 +231,7 @@
   text-align: center;
   width: 270px;
   height: 19px;
-  margin-top: 30px;
+  margin-top: 30px; 
 }
 
 .employee-position {
@@ -194,10 +244,42 @@
   margin-top: 10px;
 }
 
-/* Стили Подвал*/
+/* Геометрия и Флекс сетка */
+.list-staff {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-marg-size));
+  margin-left: calc(-1 * var(--card-marg-size));
+}
+
+.li-staff {
+  flex-basis: calc(100% / 4 - var(--card-marg-size));
+  margin-left: var(--card-marg-size);
+  margin-top: var(--card-marg-size);
+}
+
+.section-staff > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.staff-card {
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow-staff);
+  
+}
+
+.staff-box {
+  padding-top: 50px;
+}
+
+/* Стили FOOTER */
 .footer {
   background-color: var(--bg-footer);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer{
