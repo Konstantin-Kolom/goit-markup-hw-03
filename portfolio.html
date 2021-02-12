@@ -11,102 +11,121 @@
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body class="body">
-    <header>
+    <header class="header">
         <div class="container">
-        <nav>
-            <a class="logo" href="./index.html">
-            Web<span class="logo-text">Studio</span>
-            </a>
-            <ul>
-                <li><a class="nav-link" href="./index.html">Студия</a></li>
-                <li><a class="nav-link active" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-link" href="./contacts.html">Контакты</a> </li>
-            </ul>  
-        </nav>  
-        <ul>
-            <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-       </div>
+            <nav class="nav-menu">
+                <a class="logo" href="./index.html">
+                Web<span class="logo-text">Studio</span>
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-line"><a class="nav-link" href="./index.html">Студия</a></li>
+                    <li class="nav-line"><a class="nav-link active" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-line"><a class="nav-link" href="./contacts.html">Контакты</a> </li>
+                </ul>  
+            </nav>  
+            <ul class="contacts-list">
+                <li class="contacts-line"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contacts-line"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section class="btn-filter">
             <div class="container">
                 <h1 class="visually-hidden">Наши разработки</h1>
                 <ul class="btn-list">
-                    <li><button type="button" class="btn autofocus">Все</button></li>
-                    <li><button type="button" class="btn">Веб-сайт</button></li>
-                    <li><button type="button" class="btn">Приложения</button></li>
-                    <li><button type="button" class="btn">Дизайн</button></li>
-                    <li><button type="button" class="btn">Маркетин</button></li>
+                    <li class="btn-line"><button type="button" class="btn-link autofocus">Все</button></li>
+                    <li class="btn-line"><button type="button" class="btn-link">Веб-сайт</button></li>
+                    <li class="btn-line"><button type="button" class="btn-link">Приложения</button></li>
+                    <li class="btn-line"><button type="button" class="btn-link">Дизайн</button></li>
+                    <li class="btn-line"><button type="button" class="btn-link">Маркетин</button></li>
                 </ul>
-    
-                <ul class="program-list">
-                    <li class="program-item">
-                        <img src="./images/portfolio/Technokryak.jpg" alt="Веб-сайт Технокряк">
-                        <h2 class="program-title">Технокряк</h2>
-                        <p class="program-type">Веб-сайт</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                <div class="program-box">
+                    <ul class="program-list">
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/Technokryak.jpg" alt="Веб-сайт Технокряк">
+                                <h2 class="program-title">Технокряк</h2>
+                                <p class="program-type">Веб-сайт</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/Poster.jpg" alt="Постер New Orlean vs Golden Star">
-                        <h2 class="program-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="program-type">Дизайн</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/Poster.jpg" alt="Постер New Orlean vs Golden Star">
+                                <h2 class="program-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="program-type">Дизайн</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                           </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/SeafoodRestaurant.jpg" alt="Ресторан Seafood">
-                        <h2 class="program-title">Ресторан Seafood</h2>
-                        <p class="program-type">Приложение</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/SeafoodRestaurant.jpg" alt="Ресторан Seafood">
+                                <h2 class="program-title">Ресторан Seafood</h2>
+                                <p class="program-type">Приложение</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/PrimeProject.jpg" alt="Проект Prime">
-                        <h2 class="program-title">Проект Prime</h2>
-                        <p class="program-type">Маркетинг</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/PrimeProject.jpg" alt="Проект Prime">
+                                <h2 class="program-title">Проект Prime</h2>
+                                <p class="program-type">Маркетинг</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/BoxProject.jpg" alt="Проект Boxes">
-                        <h2 class="program-title">Проект Boxes</h2>
-                        <p class="program-type">Приложение</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/BoxProject.jpg" alt="Проект Boxes">
+                                <h2 class="program-title">Проект Boxes</h2>
+                                <p class="program-type">Приложение</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/Inspiration_Borders.jpg" alt="Inspiration has no Borders">
-                        <h2 class="program-title">Inspiration has no Borders</h2>
-                        <p class="program-type">Веб-сайт</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/Inspiration_Borders.jpg" alt="Inspiration has no Borders">
+                                <h2 class="program-title">Inspiration has no Borders</h2>
+                                <p class="program-type">Веб-сайт</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/LimitedEdition.jpg" alt="Издание Limited Editio">
-                        <h2 class="program-title">Издание Limited Edition</h2>
-                        <p class="program-type">Дизайн</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/LimitedEdition.jpg" alt="Издание Limited Editio">
+                                <h2 class="program-title">Издание Limited Edition</h2>
+                                <p class="program-type">Дизайн</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/LABproject.jpg" alt="Проект LAB">
-                        <h2 class="program-title">Проект LAB</h2>
-                        <p class="program-type">Маркетинг</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/LABproject.jpg" alt="Проект LAB">
+                                <h2 class="program-title">Проект LAB</h2>
+                                <p class="program-type">Маркетинг</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </li>
 
-                    <li class="program-item">
-                        <img src="./images/portfolio/GrowingBusiness.jpg" alt="Growing Business">
-                        <h2 class="program-title">Growing Business</h2>
-                        <p class="program-type">Приложение</p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                    </li>
+                        <li class="program-item">
+                            <div class="progpam-card">
+                                <img src="./images/portfolio/GrowingBusiness.jpg" alt="Growing Business">
+                                <h2 class="program-title">Growing Business</h2>
+                                <p class="program-type">Приложение</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                          </div>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
            </div>
         </section>
 

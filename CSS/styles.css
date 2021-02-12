@@ -4,7 +4,7 @@
   background-color: #FFFFFF
 }
 
-/* HEADER */
+/* HEADER --------------------------------------------------------*/
 .header {
   border: 1px solid #ECECEC
 }
@@ -24,7 +24,7 @@
   color: var(--title-color);
 }
 
-/* Стили НАВИГАЦИЯ */
+/* Стили НАВИГАЦИЯ ---------------------------------------------*/
 .nav-link {
   color: var(--title-color);
   text-decoration: none;
@@ -102,7 +102,7 @@
 }
 
 /* MAIN*/
-/* Стили Герой */
+/* Стили Герой ----------------------------------------------------*/
 .section-hero {
   background-color: var(--bg-hero);
   max-width: 1600px;
@@ -142,7 +142,7 @@
 }   
 
 
-/* Стили НАШИ ДОСТОИНСТВА*/
+/* Стили НАШИ ДОСТОИНСТВА ------------------------------------------*/
 .title-description {
   text-transform: uppercase;
   color: var(--title-color);
@@ -179,7 +179,7 @@
 }
 
 
-/* Стили ЧЕМ ЗАНИМАЕМСЯ*/
+/* Стили ЧЕМ ЗАНИМАЕМСЯ ------------------------------------------*/
 .work-title {
   color: var(--title-color);
   font-weight: 700;
@@ -209,7 +209,7 @@
 }
 
 
-/* Стили НАША КОМАНДА */
+/* Стили НАША КОМАНДА ----------------------------------------------*/
 .staff {
   background-color: #F5F4FA;
 }
@@ -220,7 +220,6 @@
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-  /* padding-bottom: 50px; */
 }
 
 .employee-title {
@@ -275,7 +274,7 @@
   padding-top: 50px;
 }
 
-/* Стили FOOTER */
+/* Стили FOOTER -----------------------------------------------------------*/
 .footer {
   background-color: var(--bg-footer);
   padding-top: 60px;
@@ -308,9 +307,10 @@
   margin-top: 9px;
 }
 
+/* --------------------------------------------------------------------------- */
 
-/*Стилизация Кнопки - Портфолио*/
-.btn {
+/*Стилизация Кнопки - ПОРТФОЛИО*/
+.btn-link {
   color: var(---button-color);
   background-color: var(--bg-button);
   font-family: inherit;
@@ -322,27 +322,41 @@
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
+  border: none;
+  letter-spacing: 0.03em;
 }
 
+.btn-link:hover,
+.btn-link:focus {
+  color: var(--text-active-color);
+  background-color: var(--active-color);
+}
+
+.btn-link.autofocus{
+  color: var(--button-color-active);
+  background-color: var(--bg-button-active);
+}
+
+/* Геометрия и Флекс сетка */
 .btn-list {
   display: flex;
   justify-content: center;
 }
 
-.btn:hover,
-.btn:focus {
-  color: var(--text-active-color);
-  background-color: var(--active-color);
+.btn-filter {
+  margin-top: 94px;
 }
 
-.btn.autofocus{
-  color: var(--button-color-active);
-  background-color: var(--bg-button-active);
-  
+.program-box {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
-/*Стилизация Разработки - Портфолио*/
+.btn-line {
+  margin-right: 8px;
+}
 
+/*Стилизация Разработки - ПОРФОЛИО ------------------------------------------*/
 .program-title {
   color: var(--title-color);
   font-style: normal;
@@ -350,8 +364,11 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
+
+  /* Геометрия */
   margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .program-type {
@@ -360,10 +377,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
+
+  /* Геометрия */
   margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
+/* Геометрия и Флекс сетка */
 .program-list {
   display: flex;
   flex-wrap: wrap;
@@ -375,4 +396,16 @@
   flex-basis: calc(100% / 3 - var(--card-marg-size));
   margin-top: var(--card-marg-size);
   margin-left: var(--card-marg-size);
+
 }
+
+.progpam-card {
+  padding-bottom: 20px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #EEEEEE;
+  
+}
+
+/* --------------------------------------------------------------------------- */
