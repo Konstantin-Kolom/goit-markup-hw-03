@@ -17,7 +17,7 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
-  padding-right: 93px;
+  margin-right: 93px;
 }
 
 .logo .logo-text {
@@ -191,16 +191,15 @@
 /* Геометрия и Флекс сетка */
 .work-list {
   display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--work-marg-size));
+  margin-left: calc(-1 * var(--work-marg-size));
 }
 
 .work-line {
-  margin-right: 30px; 
-}
-
-.work-line:last-child {
-  margin-right: 0px; 
+  flex-basis: calc(100% / 3 - var(--work-marg-size));
+  margin-top: var(--work-marg-size);
+  margin-left: var(--work-marg-size); 
 }
 
 .work .container {
@@ -208,6 +207,10 @@
   padding-bottom: 94px;
 }
 
+.work-box {
+  display: inline-block;
+  margin-top: 50px;
+}
 
 /* Стили НАША КОМАНДА ----------------------------------------------*/
 .section-staff {
@@ -271,7 +274,8 @@
 }
 
 .staff-box {
-  padding-top: 50px;
+  display: inline-block;
+  margin-top: 50px;
 }
 
 /* Стили FOOTER -----------------------------------------------------------*/
@@ -283,6 +287,10 @@
 
 .logo-footer{
   color: var(--text-active-color);
+}
+
+.footer .logo {
+  margin-right: 0;
 }
 
 .address-text {
